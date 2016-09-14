@@ -1,8 +1,11 @@
 nameList = []
-name = input("Enter the name:")
+def name():
+    for name in nameList:
+         print(name)
 
-def printName():
-    for i in range (nameList):
-
-
+def main():
+    for i in range (3):
+        user_input = input("Enter the name:")
+        nameList.append(user_input)
+    name()
 main()
